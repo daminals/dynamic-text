@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<!--
+	NOTES:
+	1. All tokens are represented by '$' sign in the template.
+	2. You can write your code only wherever mentioned.
+	3. All occurrences of existing tokens will be replaced by their appropriate values.
+	4. Blank lines will be removed automatically.
+	5. Remove unnecessary comments before creating your template.
+-->
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="authoring-tool" content="Adobe_Animate_CC">
+<title>dynamic text</title>
+<!-- write your code here -->
+
+<!-- Social Media Links -->
+    <meta property="og:title" content="Dynamic Text">
+    <meta property="og:description" content="Text that changes.. Like Witchcraft">
+    <meta property="og:image" content="/text.png">
+    <meta property="og:url" content="https://dynamictexta.herokuapp.com">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <meta property="og:site_name" content="Dynamic Text">
+    <meta name="twitter:image:alt" content="Dynamic Text! THat chAnges!!">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="crying button man lol">
+    <!-- Social Media Links -->
+
+<script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+<script>
+(function (cjs, an) {
+var p; // shortcut to reference prototypes
+var lib={};var ss={};var img={};
+lib.ssMetadata = [
+		{name:"dynamic text_atlas_1", frames: [[0,0,910,871]]},
+		{name:"dynamic text_atlas_2", frames: [[0,0,1860,967],[0,969,1860,967]]},
+		{name:"dynamic text_atlas_3", frames: [[0,0,1154,714],[0,716,1154,714]]}
+];
+(lib.AnMovieClip = function(){
+	this.actionFrames = [];
+	this.ignorePause = false;
+	this.gotoAndPlay = function(positionOrLabel){
+		cjs.MovieClip.prototype.gotoAndPlay.call(this,positionOrLabel);
+	}
+	this.play = function(){
+		cjs.MovieClip.prototype.play.call(this);
+	}
+	this.gotoAndStop = function(positionOrLabel){
+		cjs.MovieClip.prototype.gotoAndStop.call(this,positionOrLabel);
+	}
+	this.stop = function(){
+		cjs.MovieClip.prototype.stop.call(this);
+	}
+}).prototype = p = new cjs.MovieClip();
+// symbols:
+(lib.CachedBmp_4 = function() {
+	this.initialize(ss["dynamic text_atlas_2"]);
+	this.gotoAndStop(0);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_3 = function() {
+	this.initialize(ss["dynamic text_atlas_2"]);
+	this.gotoAndStop(1);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2 = function() {
+	this.initialize(ss["dynamic text_atlas_3"]);
+	this.gotoAndStop(0);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_1 = function() {
+	this.initialize(ss["dynamic text_atlas_3"]);
+	this.gotoAndStop(1);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_5 = function() {
+	this.initialize(ss["dynamic text_atlas_1"]);
+	this.gotoAndStop(0);
+}).prototype = p = new cjs.Sprite();
+(lib.Tween1 = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+	// Layer_1
+	this.textx4 = new cjs.Text("H\nE\nY\n\nL\nO\nL", "32px 'Sholom'");
+	this.textx4.name = "textx4";
+	this.textx4.lineHeight = 34;
+	this.textx4.lineWidth = 87;
+	this.textx4.parent = this;
+	this.textx4.setTransform(-43.5,-286);
+	this.timeline.addTween(cjs.Tween.get(this.textx4).wait(1));
+	this._renderFirstFrame();
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(-45.5,-288,91,576);
+(lib.counter = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+	// Layer_1
+	this.instance = new lib.CachedBmp_1();
+	this.instance.setTransform(-321.2,-188.95,0.5,0.5);
+	this.instance_1 = new lib.CachedBmp_2();
+	this.instance_1.setTransform(-321.2,-188.95,0.5,0.5);
+	this.instance_2 = new lib.CachedBmp_3();
+	this.instance_2.setTransform(-528.2,-242.45,0.5,0.5);
+	this.instance_3 = new lib.CachedBmp_4();
+	this.instance_3.setTransform(-528.2,-241.7,0.5,0.5);
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_2}]},1).to({state:[{t:this.instance_3}]},1).wait(1));
+	this._renderFirstFrame();
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(-528.2,-242.4,930,484.20000000000005);
+(lib.sliding = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+	// timeline functions:
+	this.frame_0 = function() {
+		var _this = this;
+		/*
+		Stop a Movie Clip/Video
+		Stops the specified movie clip or video.
+		*/
+		_this.stop();
+	}
+	// actions tween:
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(20));
+	// Layer_1
+	this.instance = new lib.Tween1("synched",0);
+	this.instance.setTransform(-0.7,0);
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1).to({x:-23.6805},0).wait(1).to({x:-41.3874},0).wait(1).to({x:-54.9777},0).wait(1).to({x:-65.4831},0).wait(1).to({x:-73.7581},0).wait(1).to({x:-80.5533},0).wait(1).to({x:-86.4417},0).wait(1).to({x:-91.8611},0).wait(1).to({x:-91.6289},0).wait(1).to({x:-85.8562},0).wait(1).to({x:-80.072},0).wait(1).to({x:-74.0804},0).wait(1).to({x:-67.5703},0).wait(1).to({x:-60.0578},0).wait(1).to({x:-50.9091},0).wait(1).to({x:-39.2947},0).wait(1).to({x:-24.2696},0).wait(1).to({x:-4.6932},0).wait(1).to({x:-2.3197},0).wait(1));
+	this._renderFirstFrame();
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(-137.3,-288,182.10000000000002,576);
+// stage content:
+(lib.dynamictext = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+	this.actionFrames = [0];
+	this.isSingleFrame = false;
+	// timeline functions:
+	this.frame_0 = function() {
+		if(this.isSingleFrame) {
+			return;
+		}
+		if(this.totalFrames == 1) {
+			this.isSingleFrame = true;
+		}
+		var count1 = 0;
+		var count3 = 0;
+		var count4 = 0;
+		var text = ["h","e","y"," ","l","o","l"];
+		var textc = 0;
+		var _this = this;
+		_this.textx4.stop();
+		var phrasescheck = -1;
+		var new_phrasescheck = 0;
+		var phrases = ["hey bestie", "damn bro u drippin 😩", "i pledge alliegance to the swag", "besties check!!!", "gaslight gatekeep girlboss 😏‼️"]
+		// counter button
+		_this.counterb.on('click', function(){
+			var letter1 = Math.floor(Math.random() * 26) + 64;
+			letter1 = String.fromCharCode(letter1);
+			_this.letter.text = letter1;
+			var validorno = Math.random() < 0.5;
+			if (validorno) {
+				_this.validcheck.text = "VALID";
+				_this.validcheck.color = "#00ff00"	;
+				} else {
+				_this.validcheck.text = "NOT VALID";
+				_this.validcheck.color = "#ff0000";
+				}
+			count1 += 1;
+			_this.counter1.text = count1;
+		});
+		// hey lol button
+		this.this_says.addEventListener('click',fl_MouseClickHandler.bind(this));
+		function fl_MouseClickHandler()
+		{
+			if (textc < text.length) {
+			_this.text_add.text += text[textc];
+			textc += 1;
+			_this.counter2.text = textc;	
+			} else{
+			this.this_says.mouseEnabled=false;
+			}
+		}
+		// besties check
+		_this.button3.on('click', function(){
+			new_phrasescheck = [Math.floor(Math.random() * phrases.length)];
+			while (new_phrasescheck != phrasescheck){
+			_this.text3.text = phrases[new_phrasescheck]
+			count3 += 1;
+			_this.counter3.text = count3;
+			phrasescheck = new_phrasescheck;
+			break;
+				}
+		});
+		// slider lol
+		this.button4.addEventListener('click',fl_MouseClickHandler4.bind(this));
+		function fl_MouseClickHandler4(){
+			console.log("im running lol")
+			this.this_says.mouseEnabled=false;	
+			_this.textx4.play();
+			count4 += 1;
+			_this.counter4.text = count4;
+			this.this_says.mouseEnabled=true;
+			}
+	}
+	// actions tween:
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1));
+	// buttons
+	this.button3 = new lib.counter();
+	this.button3.name = "button3";
+	this.button3.setTransform(230.35,353.05,0.1781,0.2115);
+	new cjs.ButtonHelper(this.button3, 0, 1, 2, false, new lib.counter(), 3);
+	this.button4 = new lib.counter();
+	this.button4.name = "button4";
+	this.button4.setTransform(480.35,353.05,0.1781,0.2115);
+	new cjs.ButtonHelper(this.button4, 0, 1, 2, false, new lib.counter(), 3);
+	this.this_says = new lib.counter();
+	this.this_says.name = "this_says";
+	this.this_says.setTransform(351.35,353.05,0.1781,0.2115);
+	new cjs.ButtonHelper(this.this_says, 0, 1, 2, false, new lib.counter(), 3);
+	this.counterb = new lib.counter();
+	this.counterb.name = "counterb";
+	this.counterb.setTransform(339.75,265.05,0.1814,0.1908);
+	new cjs.ButtonHelper(this.counterb, 0, 1, 2, false, new lib.counter(), 3);
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.counterb},{t:this.this_says},{t:this.button4},{t:this.button3}]}).wait(1));
+	// background
+	this.validcheck = new cjs.Text("", "36px 'Silom'");
+	this.validcheck.name = "validcheck";
+	this.validcheck.textAlign = "center";
+	this.validcheck.lineHeight = 48;
+	this.validcheck.lineWidth = 100;
+	this.validcheck.parent = this;
+	this.validcheck.setTransform(412.55,90.6,0.4817,0.5631);
+	this.letter = new cjs.Text("", "36px 'Silom'");
+	this.letter.name = "letter";
+	this.letter.lineHeight = 48;
+	this.letter.lineWidth = 21;
+	this.letter.parent = this;
+	this.letter.setTransform(402.5,38.55);
+	this.textx4 = new lib.sliding();
+	this.textx4.name = "textx4";
+	this.textx4.setTransform(596.5,325.05);
+	this.text3 = new cjs.Text("hey bestie", "20px 'SignPainter-HouseScript'");
+	this.text3.name = "text3";
+	this.text3.lineHeight = 20;
+	this.text3.lineWidth = 180;
+	this.text3.parent = this;
+	this.text3.setTransform(181,80.55);
+	this.counter4 = new cjs.Text("0", "36px 'Silom'");
+	this.counter4.name = "counter4";
+	this.counter4.lineHeight = 48;
+	this.counter4.parent = this;
+	this.counter4.setTransform(9.8,357.5);
+	this.counter3 = new cjs.Text("0", "36px 'Silom'");
+	this.counter3.name = "counter3";
+	this.counter3.lineHeight = 48;
+	this.counter3.parent = this;
+	this.counter3.setTransform(8.55,254.5);
+	this.counter2 = new cjs.Text("0", "36px 'Silom'");
+	this.counter2.name = "counter2";
+	this.counter2.lineHeight = 48;
+	this.counter2.parent = this;
+	this.counter2.setTransform(11.05,167.15);
+	this.text_add = new cjs.Text("", "36px 'Silom'");
+	this.text_add.name = "text_add";
+	this.text_add.lineHeight = 48;
+	this.text_add.lineWidth = 190;
+	this.text_add.parent = this;
+	this.text_add.setTransform(169,12.95);
+	this.counter1 = new cjs.Text("0", "36px 'Silom'");
+	this.counter1.name = "counter1";
+	this.counter1.lineHeight = 48;
+	this.counter1.parent = this;
+	this.counter1.setTransform(16.05,64.95);
+	this.instance = new lib.CachedBmp_5();
+	this.instance.setTransform(-5.45,-15.45,0.5,0.5);
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance},{t:this.counter1},{t:this.text_add},{t:this.counter2},{t:this.counter3},{t:this.counter4},{t:this.text3},{t:this.textx4},{t:this.letter},{t:this.validcheck}]}).wait(1));
+	this._renderFirstFrame();
+}).prototype = p = new lib.AnMovieClip();
+p.nominalBounds = new cjs.Rectangle(269.6,184.6,371.69999999999993,428.5);
+// library properties:
+lib.properties = {
+	id: '97D9FD1F59D048D285D7A5B78749A3D1',
+	width: 550,
+	height: 400,
+	fps: 24,
+	color: "#FFFFFF",
+	opacity: 1.00,
+	manifest: [
+		{src:"images/dynamic text_atlas_1.png?1618507144928", id:"dynamic text_atlas_1"},
+		{src:"images/dynamic text_atlas_2.png?1618507144929", id:"dynamic text_atlas_2"},
+		{src:"images/dynamic text_atlas_3.png?1618507144929", id:"dynamic text_atlas_3"}
+	],
+	preloads: []
+};
+// bootstrap callback support:
+(lib.Stage = function(canvas) {
+	createjs.Stage.call(this, canvas);
+}).prototype = p = new createjs.Stage();
+p.setAutoPlay = function(autoPlay) {
+	this.tickEnabled = autoPlay;
+}
+p.play = function() { this.tickEnabled = true; this.getChildAt(0).gotoAndPlay(this.getTimelinePosition()) }
+p.stop = function(ms) { if(ms) this.seek(ms); this.tickEnabled = false; }
+p.seek = function(ms) { this.tickEnabled = true; this.getChildAt(0).gotoAndStop(lib.properties.fps * ms / 1000); }
+p.getDuration = function() { return this.getChildAt(0).totalFrames / lib.properties.fps * 1000; }
+p.getTimelinePosition = function() { return this.getChildAt(0).currentFrame / lib.properties.fps * 1000; }
+an.bootcompsLoaded = an.bootcompsLoaded || [];
+if(!an.bootstrapListeners) {
+	an.bootstrapListeners=[];
+}
+an.bootstrapCallback=function(fnCallback) {
+	an.bootstrapListeners.push(fnCallback);
+	if(an.bootcompsLoaded.length > 0) {
+		for(var i=0; i<an.bootcompsLoaded.length; ++i) {
+			fnCallback(an.bootcompsLoaded[i]);
+		}
+	}
+};
+an.compositions = an.compositions || {};
+an.compositions['97D9FD1F59D048D285D7A5B78749A3D1'] = {
+	getStage: function() { return exportRoot.stage; },
+	getLibrary: function() { return lib; },
+	getSpriteSheet: function() { return ss; },
+	getImages: function() { return img; }
+};
+an.compositionLoaded = function(id) {
+	an.bootcompsLoaded.push(id);
+	for(var j=0; j<an.bootstrapListeners.length; j++) {
+		an.bootstrapListeners[j](id);
+	}
+}
+an.getComposition = function(id) {
+	return an.compositions[id];
+}
+an.makeResponsive = function(isResp, respDim, isScale, scaleType, domContainers) {		
+	var lastW, lastH, lastS=1;		
+	window.addEventListener('resize', resizeCanvas);		
+	resizeCanvas();		
+	function resizeCanvas() {			
+		var w = lib.properties.width, h = lib.properties.height;			
+		var iw = window.innerWidth, ih=window.innerHeight;			
+		var pRatio = window.devicePixelRatio || 1, xRatio=iw/w, yRatio=ih/h, sRatio=1;			
+		if(isResp) {                
+			if((respDim=='width'&&lastW==iw) || (respDim=='height'&&lastH==ih)) {                    
+				sRatio = lastS;                
+			}				
+			else if(!isScale) {					
+				if(iw<w || ih<h)						
+					sRatio = Math.min(xRatio, yRatio);				
+			}				
+			else if(scaleType==1) {					
+				sRatio = Math.min(xRatio, yRatio);				
+			}				
+			else if(scaleType==2) {					
+				sRatio = Math.max(xRatio, yRatio);				
+			}			
+		}
+		domContainers[0].width = w * pRatio * sRatio;			
+		domContainers[0].height = h * pRatio * sRatio;
+		domContainers.forEach(function(container) {				
+			container.style.width = w * sRatio + 'px';				
+			container.style.height = h * sRatio + 'px';			
+		});
+		stage.scaleX = pRatio*sRatio;			
+		stage.scaleY = pRatio*sRatio;
+		lastW = iw; lastH = ih; lastS = sRatio;            
+		stage.tickOnUpdate = false;            
+		stage.update();            
+		stage.tickOnUpdate = true;		
+	}
+}
+an.handleSoundStreamOnTick = function(event) {
+	if(!event.paused){
+		var stageChild = stage.getChildAt(0);
+		if(!stageChild.paused || stageChild.ignorePause){
+			stageChild.syncStreamSounds();
+		}
+	}
+}
+})(createjs = createjs||{}, AdobeAn = AdobeAn||{});
+var createjs, AdobeAn;
+</script>
+<script>
+var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
+function init() {
+	canvas = document.getElementById("canvas");
+	anim_container = document.getElementById("animation_container");
+	dom_overlay_container = document.getElementById("dom_overlay_container");
+	var comp=AdobeAn.getComposition("97D9FD1F59D048D285D7A5B78749A3D1");
+	var lib=comp.getLibrary();
+	var loader = new createjs.LoadQueue(false);
+	loader.addEventListener("fileload", function(evt){handleFileLoad(evt,comp)});
+	loader.addEventListener("complete", function(evt){handleComplete(evt,comp)});
+	var lib=comp.getLibrary();
+	loader.loadManifest(lib.properties.manifest);
+}
+function handleFileLoad(evt, comp) {
+	var images=comp.getImages();	
+	if (evt && (evt.item.type == "image")) { images[evt.item.id] = evt.result; }	
+}
+function handleComplete(evt,comp) {
+	//This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
+	var lib=comp.getLibrary();
+	var ss=comp.getSpriteSheet();
+	var queue = evt.target;
+	var ssMetadata = lib.ssMetadata;
+	for(i=0; i<ssMetadata.length; i++) {
+		ss[ssMetadata[i].name] = new createjs.SpriteSheet( {"images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames} )
+	}
+	exportRoot = new lib.dynamictext();
+	stage = new lib.Stage(canvas);
+	stage.enableMouseOver();	
+	//Registers the "tick" event listener.
+	fnStartAnimation = function() {
+		stage.addChild(exportRoot);
+		createjs.Ticker.framerate = lib.properties.fps;
+		createjs.Ticker.addEventListener("tick", stage);
+	}	    
+	//Code to support hidpi screens and responsive scaling.
+	AdobeAn.makeResponsive(false,'both',false,1,[canvas,anim_container,dom_overlay_container]);	
+	AdobeAn.compositionLoaded(lib.properties.id);
+	fnStartAnimation();
+}
+</script>
+<!-- write your code here -->
+</head>
+<body onload="init();" style="margin:0px;">
+	<div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00); width:550px; height:400px">
+		<canvas id="canvas" width="550" height="400" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
+		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:550px; height:400px; position: absolute; left: 0px; top: 0px; display: block;">
+		</div>
+	</div>
+</body>
+</html>
